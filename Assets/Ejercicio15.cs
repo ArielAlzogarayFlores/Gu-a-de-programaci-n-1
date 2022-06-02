@@ -12,7 +12,7 @@ public class Ejercicio15 : MonoBehaviour
         bool estaEnA = num < 10 && num > (-10);
         bool estaEnB = num % 2 == 1;
         bool estaEnAmbos = num < 10 && num > (-10) && num % 2 == 1;
-        bool noEstaEnNinguno = num > 10 && num < (-10) && num % 2 == 0;
+        bool noEstaEnNinguno = num > 10 && num % 2 == 0 || num < (-10) && num % 2 == 0;
 
         Debug.Log("Regla A : " + estaEnA + " \n Regla B : " + estaEnB + "\n Ambos : " + estaEnAmbos + "\n Ninguno : " + noEstaEnNinguno );
     }
